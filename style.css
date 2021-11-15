@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(126, 243, 243);
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: darkmagenta;
+    font-size: 10em;
+    align-items: center;
+
+}
+
+form{
+    box-shadow: 0px 4px 10px rgb(0, 0,0.1);
+    max-width: 100%;
+    width: 400px;
+}
+.input{
+    border: none;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    display: block;
+    width: 100%;
+}
+.todo{
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.todo li{
+    border-top: 1px solid black;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.complete{
+    text-decoration: line-through;
+}
+
+input:focus{
+    outline-color: #d5d5d5;
+}
