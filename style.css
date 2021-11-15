@@ -43,7 +43,7 @@ form{
     cursor: pointer;
     opacity: 0.5;
 }
-.complete{
+.todos li.complete{
     text-decoration: line-through;
 }
 
