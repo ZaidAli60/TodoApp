@@ -1,6 +1,6 @@
 const form = document.getElementById("form");
 const input = document.getElementById("input");
-const todos = document.getElementById("todo");
+const todoUl = document.getElementById("todo");
 
 form.addEventListener("submit", (e) =>{
 e.preventDefault();
@@ -20,8 +20,20 @@ function addTodo(todo) {
             todoEl.classList.add("completed");
         }
         todoEl.innerText = todoText;
+        
+        // // Mark Add
+        // todoEl.addEventListener("click", () => {
+        //     todoEl.classList.toggle("completed");
+        // });
+
+
+        todoEl.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+            todoEl.remove();
+        });
+
         // Add it document
-         todos.appendChild(todoEl);
+         todoUl.appendChild(todoEl);
          input.value = "";
     }
 }
